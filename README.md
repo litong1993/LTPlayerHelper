@@ -37,8 +37,9 @@ AudioHelper是一个简单的播放器，可以播放本地和远程的音频资
 - 设置播放回调
 ``` swift
 
-	func updateProgress(value:Float)->Swift.Void{
-        self.progress.value = value
+	func updateProgress(progress:Float,current:Double,total:Double)->Swift.Void{
+        self.progress.value = progress
+        print("当前时间：总时长 = \(current):\(total)")
     }
 
 ```
